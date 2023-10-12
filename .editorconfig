@@ -1,0 +1,53 @@
+# editorconfig.org
+
+# This is the project's root directory
+root = true
+
+[*]
+# Use spaces for indentation
+indent_style = space
+# Each indent should contain 2 spaces
+indent_size = 2
+# Use Unix line endings
+end_of_line = lf
+# The files are utf-8 encoded
+charset = utf-8
+# No whitespace at the end of line
+trim_trailing_whitespace = true
+# A file must end with an empty line - this is good for version control systems
+insert_final_newline = true
+# A line should not have more than this amount of chars (not supported by all plugins)
+max_line_length = 100
+
+[{Makefile,**.mk}]
+# Use tabs for indentation (Makefiles require tabs)
+indent_style = tab
+
+[**/*.{js,cjs,mjs,jsx,ts,tsx,lua}]
+indent_style = space
+indent_size = 2
+[**/*.{cs,rs}]
+indent_style = space
+indent_size = 4
+
+[{package.json,*.yml}]
+indent_style = space
+indent_size = 2
+
+[configure]
+indent_style = space
+indent_size = 2
+
+[Makefile]
+indent_style = tab
+indent_size = 8
+
+[{node_modules}/**]
+indent_style = ignore
+indent_size = ignore
+end_of_line = ignore
+trim_trailing_whitespace = ignore
+charset = ignore
+
+[{test/fixtures,deps,tools/node_modules,tools/gyp,tools/icu,tools/msvs}/**]
+insert_final_newline = false
