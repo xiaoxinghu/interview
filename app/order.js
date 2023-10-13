@@ -31,7 +31,7 @@ export async function handler(request) {
   }
 
   // place the order
-  const orderPlaced = await placeOrder(order)
+  const orderPlaced = await db.placeOrder(order)
   const result = await email.sendOrderConfirmation(orderPlaced)
   if (!result) {
     return {

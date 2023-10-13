@@ -11,13 +11,13 @@ import db from '@nib/db'
  * @example
 [
   {
-    code: '0001',
+    code: 'OCT2023',
     discount: 0.1,
     startDate: '2023-10-01T00:00:00.000Z',
-    endDate: '2023-12-01T00:00:00.000Z',
+    endDate: '2023-11-01T00:00:00.000Z',
   },
   {
-    code: '0002',
+    code: 'JAN2024',
     discount: 0.1,
     startDate: '2024-01-01T00:00:00.000Z',
     endDate: '2024-02-01T00:00:00.000Z',
